@@ -42,6 +42,7 @@ body {
   a {
     color: #4BC2C6 ;
     text-decoration: none;
+    align-self: center;
   }
   
   .social-media-link {
@@ -71,19 +72,90 @@ body {
     color: #f6f0f0; 
   }
   .hero img {
+  
     bottom: 50px;
     display: block;
     width: 100%;
     height: auto;
+    
+    
   }
   .hero article img {
     float: right;
-    margin-left: 20px; 
+    margin-left: 20px;
+    
+
   }
   .hero article p {
+    
     margin: 0; 
+    
+
+    
   }
   .box img {
-    display: block;
-    margin-top: 10px;
+    display: grid;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    
+  } 
+  .containers{
+    display: grid;
+    grid-template-columns: 300px 100px 100px 100px 100px;
+    padding: 10px;
+    background-color: #286C6E; 
+    
+    
+  }
+  
+  .history img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin-left: 350px;
+    bottom: 30px;
+    
+    
+    
+  }
+  .history h2{
+    text-align:center;
+    position: relative;
+    
+  }
+  
+  .columns-container{
+    max-width:1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 5px;
+    
+
+
+  }
+  .columns {
+    column-count: 2; 
+    column-gap: 250px; 
+    column-rule: 2px;
+    
+  } 
+  .images-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;  
+  }
+
+  .sociallinks{
+    left: 1420px;
+    position: absolute;
+    
+    
+  }
+
+  footer p {
+    text-align: center;
+    position: relative;
+    bottom: -70px;
+    
   }
