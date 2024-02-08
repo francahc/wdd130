@@ -38,11 +38,7 @@ fieldset{
     padding: 1rem;
 
 }
-legend{
-    padding: 0.5rem;
-    color: rgb(69, 113, 99);
-    font-size: 1.3rem;
-}
+
 label, input, button, select, textarea {
     font-family: Roboto , Arial, sans-serif;
 }
