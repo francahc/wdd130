@@ -40,14 +40,14 @@ fieldset{
 }
 legend{
     padding: 0.5rem;
-    color: rgb(69, 113, 99);;
+    color: rgb(69, 113, 99);
     font-size: 1.3rem;
 }
 label, input, button, select, textarea {
     font-family: Roboto , Arial, sans-serif;
 }
 label {
-    text-align: right;
+    text-align: center;
     padding-right: 1rem;
 
 }
@@ -66,7 +66,7 @@ input[type="checkbox"] {
 
 button {
     margin: 1rem;
-    background-color: rgb(69, 113, 99);;
+    background-color: rgb(69, 113, 99);
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -90,12 +90,11 @@ footer{
     display: grid;
     align-items: center;
 }
-
-.column1{
-    grid-template-columns: 3fr 1fr ;
+p {
+    text-align: center;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1rem;
     margin: 0.5rem;
-
-}
-.column2{
-    grid-template-columns: 1fr 2fr;
+    background-color: rgb(152, 196, 182);
 }
