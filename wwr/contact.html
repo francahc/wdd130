@@ -64,34 +64,38 @@
         </div>
     </fieldset>
     <fieldset>
-        <div class="form-item question3">
-          <label for="question3">Purpose of the Messages</label>
-          <select id="question3" name="question3">
-              <option value="option" selected disabled>choose one</option>
-              <option value="option 1">General Inquiry</option>
-              <option value="option 2">Reservation Question</option>
-              <option value="option 3">Website Suggestion</option>
-              
-          </select>
+        <h1> Purpose of the Message:</h1>
+        <div class="form-item checkquestion1">
+            <label>
+                <input type="radio" name="checkquestion1">
+                General Inquiry
+            </label>
         </div>
+        <div class="form-item checkquestion2">
+            <label>
+                <input type="radio" name="checkquestion2">
+                Reservation Question
+            </label>
+        </div>
+        <div class="form-item checkquestion3">
+            <label>
+                <input type="radio" name="checkquestion3">
+                Website Suggestion
+            </label>
+        </div>
+        
         <div class="form-item question4">
             <label for="question4">Write your question or suggestion here:</label>
             <input type="text" id="question4" name="question4">
         </div>
         <div class="form-item question5">
             <label>
-                <input type="radio" name="newsletter_subscription">
+                <input type="checkbox" name="newsletter_subscription">
                 Please subscribe me to the monthly newsletter
             </label>
             
         </div>
-        <div class="form-item question7">
-            <label>
-                <input type="radio" name="message_subscription">
-                contact me via text messages or whatsapp
-            </label>
-            
-        </div>
+        
         
     </fieldset>
     <button type="submit">submit</button>

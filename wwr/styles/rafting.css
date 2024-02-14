@@ -261,3 +261,8 @@ footer{
   margin-left: 400px;
   margin-top: -40px;
 }
+fieldset h1{
+  text-align: center;
+  line-height : 0.1px;
+
+}
