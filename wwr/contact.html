@@ -52,12 +52,15 @@
     <fieldset>
         <div class="form-item question1">
           <label for="question1">NAME:</label>
-          <input type="text" id="question1" name="question1">
+          <input type="radio" id="question1" name="question1">
         </div>
         <div class="form-item question2">
-            <label for="question2">Email:</label>
-            <input type="text" id="question2" name="question2">
+            <label for="contact_email">Email:</label>
+            <input type="radio" id="contact_email" name="contact_method" value="email">
         </div>
+        <div class="form-item question6">
+            <label for="contact_phone">Phone Number:</label>
+            <input type="radio" id="contact_phone" name="contact_method_phone" value="email">
     </fieldset>
     <fieldset>
         <div class="form-item question3">
@@ -81,6 +84,7 @@
             </label>
             
         </div>
+        
     </fieldset>
     <button type="submit">submit</button>
 </form>
