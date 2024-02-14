@@ -51,16 +51,17 @@
 <form>
     <fieldset>
         <div class="form-item question1">
-          <label for="question1">NAME:</label>
-          <input type="radio" id="question1" name="question1">
+          <label for="question1">Name:</label>
+          <input type="text" id="question1" name="question1">
         </div>
         <div class="form-item question2">
             <label for="contact_email">Email:</label>
-            <input type="radio" id="contact_email" name="contact_method" value="email">
+            <input type="text" id="contact_email" name="contact_method" >
         </div>
         <div class="form-item question6">
             <label for="contact_phone">Phone Number:</label>
-            <input type="radio" id="contact_phone" name="contact_method_phone" value="email">
+            <input type="text" id="contact_phone" name="contact_method_phone">
+        </div>
     </fieldset>
     <fieldset>
         <div class="form-item question3">
@@ -79,8 +80,15 @@
         </div>
         <div class="form-item question5">
             <label>
-                <input type="checkbox" name="newsletter_subscription">
+                <input type="radio" name="newsletter_subscription">
                 Please subscribe me to the monthly newsletter
+            </label>
+            
+        </div>
+        <div class="form-item question7">
+            <label>
+                <input type="radio" name="message_subscription">
+                contact me via text messages or whatsapp
             </label>
             
         </div>
