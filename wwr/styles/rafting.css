@@ -104,51 +104,7 @@ body {
     align-items: center;
     
   } 
-  .containers{
-    display: grid;
-    grid-template-columns: 300px 100px 100px 100px 100px;
-    padding: 10px;
-    background-color: #286C6E; 
-    
-    
-  }
   
-  .history img {
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    margin-left: 350px;
-    bottom: 10px;
-    
-    
-    
-  }
-  .history h2{
-    text-align:center;
-    position: relative;
-    
-  }
-  
-  .columns-container{
-    max-width:1000px;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 5px;
-    
-
-
-  }
-  .columns {
-    column-count: 2; 
-    column-gap: 250px; 
-    column-rule: 2px;
-    
-  } 
-  .images-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;  
-  }
 
   .sociallinks{
     left: 1420px;
@@ -231,13 +187,21 @@ button:hover{
   background-color: darkgreen;
 
 }
-footer{
-  margin: 1rem auto 0;
-  width: 650px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #777;
-  border-top: 1px solid #ccc;
+footer {
+  background-color: #286C6E; /* Adjust background color as needed */
+  color: #3A321A; /* Adjust text color as needed */
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin-left: 10px; /* Adjust spacing between social icons */
 }
 .form-item{
   display: grid;
@@ -301,4 +265,107 @@ nav ul li {
 
 nav ul li:last-child {
   margin-right: 0;
+}
+
+
+.adventures {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures images won't wrap to the next line */
+    overflow-x: auto; /* Adds horizontal scroll if images exceed container width */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+    scrollbar-width: none; /* Hides scrollbar for browsers that support */
+    -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer */
+}
+
+.adventures::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for WebKit browsers */
+}
+
+.images-container {
+    display: flex;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+header {
+  background-color: #286C6E; /* Change the background color as needed */
+  color: #fff; /* Change the text color as needed */
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.logo {
+  width: 150px; /* Adjust logo width as needed */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Adjust spacing between navigation items as needed */
+}
+
+nav ul li a {
+  color: #fff; /* Change link color as needed */
+  text-decoration: none;
+  font-weight: bold; /* Adjust font weight as needed */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+nav ul li a:hover {
+  color: #ccc; /* Change link color on hover as needed */
+}
+.history {
+  padding: 40px 0;
+}
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.history-text {
+  flex: 2;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.history-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
