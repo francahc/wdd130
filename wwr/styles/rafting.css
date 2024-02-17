@@ -51,52 +51,57 @@ body {
 
   .hero {
     position: relative;
+    width: 100%; 
+    max-height: 100vh; 
+    overflow: hidden; 
   }
   
   
   .hero h1 {
+    top: 60%;
+    color: white;
+    font-size: 3rem; 
     position: absolute;
-    top: 10%; 
-    left: 60%; 
-    transform: translate(-50%, -50%);
-    color: #fff ; 
+    top: 10px;
+    left: 50%;
+    text-align: center; 
+
   }
-  
- 
+   .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    text-align: center; 
+  }
   .hero article {
-    position: absolute;
-    top: 30%;
-    left: 70%; 
-    transform: translateX(-10%);
-    background-color: rgba(154, 188, 197, 0.7);
-    color: #f6f0f0; 
-    
+    top: 50%;
+    width: 80%;
+    max-width: 600px; 
+    background-color: rgba(228, 250, 250, 0.361); 
+    padding: 20px;
+    color: white; 
   }
+  .hero article p {
+  float: left;
+  width: 70%; 
+  color: #FFFFFF;
+  }
+  .hero article img {
+  float: right;
+  width: 30%; 
+  margin-left: 0; 
+  }
+ 
   .hero img {
   
-    bottom: 50px;
-    display: block;
     width: 100%;
     height: auto;
     
     
   }
-  .hero article {
-    display: block;
-    position: absolute;
-    margin: 0 auto; 
-    width: 200px; 
-    text-align: center; 
-    margin-top: 190px; 
-    height: auto;
-
-  }
-  .hero article p {
-    
-    margin: 0;
-   
-   
-  }
+  
+  
   .box img {
     display: grid;
     grid-column: 1/4;
@@ -113,12 +118,6 @@ body {
     
   }
 
-  footer p {
-    text-align: center;
-    position: relative;
-    bottom: -70px;
-    
-  }
   .employees {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -188,11 +187,11 @@ button:hover{
 
 }
 footer {
-  background-color: #286C6E; /* Adjust background color as needed */
-  color: #3A321A; /* Adjust text color as needed */
+  background-color: #286C6E; 
+  color: #ffffff; 
   padding: 20px;
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end; 
   align-items: center;
 }
 
@@ -201,7 +200,7 @@ footer {
 }
 
 .social-links a {
-  margin-left: 10px; /* Adjust spacing between social icons */
+  margin-left: 10px; 
 }
 .form-item{
   display: grid;
@@ -233,8 +232,8 @@ fieldset h1{
 .map-container {
   position: relative;
   overflow: hidden;
-  width: 300px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
+  width: 300px; 
+  height: 300px; 
   left: 170px;
 }
 
@@ -266,23 +265,37 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
+.adventures h2 {
+  position: absolute;
+  top: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  color: #286C6E;
+
+}
 
 
 .adventures {
     display: flex;
-    flex-wrap: nowrap; /* Ensures images won't wrap to the next line */
-    overflow-x: auto; /* Adds horizontal scroll if images exceed container width */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
-    scrollbar-width: none; /* Hides scrollbar for browsers that support */
-    -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer */
+    position: relative; 
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    
 }
 
 .adventures::-webkit-scrollbar {
-    display: none; /* Hides scrollbar for WebKit browsers */
+    display: none;
 }
 
 .images-container {
     display: flex;
+    margin-top: 70px; 
 }
 
 figure {
@@ -296,22 +309,22 @@ figcaption {
     font-size: 14px;
 }
 header {
-  background-color: #286C6E; /* Change the background color as needed */
-  color: #fff; /* Change the text color as needed */
-  padding: 20px 0; /* Adjust padding as needed */
+  background-color: #286C6E; 
+  color: #fff; 
+  padding: 20px 0; 
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Adjust maximum width as needed */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px; 
 }
 
 .logo {
-  width: 150px; /* Adjust logo width as needed */
+  width: 150px; 
 }
 
 nav ul {
@@ -322,18 +335,18 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px; /* Adjust spacing between navigation items as needed */
+  margin-left: 20px; 
 }
 
 nav ul li a {
-  color: #fff; /* Change link color as needed */
+  color: #fff; 
   text-decoration: none;
-  font-weight: bold; /* Adjust font weight as needed */
-  transition: color 0.3s ease; /* Add transition for smooth color change */
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-  color: #ccc; /* Change link color on hover as needed */
+  color: #ccc; 
 }
 .history {
   padding: 40px 0;
@@ -365,7 +378,11 @@ nav ul li a:hover {
   display: block;
 }
 
-.history-text p {
+.history-text p, h2 {
   margin-bottom: 20px;
   line-height: 1.6;
+  color: #286C6E;
+}
+.hero h2{
+  color: #ffffff;;
 }
